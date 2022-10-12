@@ -1,0 +1,19 @@
+{
+  "name": "module-federation-practice",
+  "version": "1.0.0",
+  "description": "Just a basic demo for learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "concurrently --kill-others \"cd homepage && npm install\" \"cd portal && npm install\"",
+    "start": "concurrently --kill-others \"cd homepage && npm run start\" \"cd portal && npm run start\""
+  },
+  "keywords": [
+    "micro-frontend",
+    "react"
+  ],
+  "author": "Rafael Mejia",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
